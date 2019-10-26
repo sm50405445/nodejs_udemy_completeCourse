@@ -74,7 +74,7 @@ const readNote = (title) => {
 
 function saveData(note) {
     const JSONData = JSON.stringify(note);
-    fs.writeFileSync('note.json', JSONData);
+    fs.writeFileSync('note.json', JSoNData);
 }
 
 const loadNote = function () {
