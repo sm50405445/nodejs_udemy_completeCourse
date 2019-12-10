@@ -34,17 +34,38 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
+        helpText: 'This is helpful text',
         title: 'Help page',
         name: 'LSM'
     })
 })
 
-
-
 app.get('/weather', (req, res) => {
     res.send('Weather Page', {
         title: 'weather',
         name: 'LSM'
+    })
+})
+
+app.get('/products', (req, res) => {
+    res.send({
+        products: []
+    })
+})
+
+app.get('/help/*', (req, res) => {
+    res.send('Help article not found');
+})
+
+app.get('/what/*', (req, res) => {
+    res.send('What article not found');
+})
+
+app.get("*", (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'LSM',
+        errorMessage: 'Page Not Found'
     })
 })
 
