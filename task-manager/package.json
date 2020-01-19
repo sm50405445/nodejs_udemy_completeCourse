@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "mongo": "C:/java_tool/mongodb-win32-x86_64-2012plus-4.2.2/mongodb-win32-x86_64-2012plus-4.2.2/bin/mongod.exe --dbpath=/mongodb-data",
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "bcrypt": "^3.0.7",
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.1.10",
     "mongoose": "^5.3.16",
     "validator": "^10.9.0"
