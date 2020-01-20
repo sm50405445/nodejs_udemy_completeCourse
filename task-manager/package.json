@@ -7,7 +7,7 @@
     "mongo": "C:/java_tool/mongodb-win32-x86_64-2012plus-4.2.2/mongodb-win32-x86_64-2012plus-4.2.2/bin/mongod.exe --dbpath=/mongodb-data",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
